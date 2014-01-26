@@ -21,6 +21,7 @@
 		AF93093D1895B2CC00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
 		AF9309451895B2CC00CB2A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9309431895B2CC00CB2A8F /* InfoPlist.strings */; };
 		AF9309471895B2CC00CB2A8F /* MCSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */; };
+		AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AF9309421895B2CC00CB2A8F /* MCSwitcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCSwitcherTests-Info.plist"; sourceTree = "<group>"; };
 		AF9309441895B2CC00CB2A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSwitcherTests.m; sourceTree = "<group>"; };
+		AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +114,11 @@
 		AF9309211895B2CB00CB2A8F /* MCSwitcher */ = {
 			isa = PBXGroup;
 			children = (
-				AF93092A1895B2CC00CB2A8F /* AppDelegate.h */,
-				AF93092B1895B2CC00CB2A8F /* AppDelegate.m */,
-				AF93092D1895B2CC00CB2A8F /* Main.storyboard */,
-				AF9309301895B2CC00CB2A8F /* ViewController.h */,
-				AF9309311895B2CC00CB2A8F /* ViewController.m */,
-				AF9309331895B2CC00CB2A8F /* Images.xcassets */,
+				AF9309541895BEAA00CB2A8F /* Assets */,
+				AF9309521895B3F700CB2A8F /* Controller */,
+				AF9309501895B3DB00CB2A8F /* Storyboards */,
+				AF9309511895B3EF00CB2A8F /* View */,
+				AF9309531895B40200CB2A8F /* Helper */,
 				AF9309221895B2CB00CB2A8F /* Supporting Files */,
 			);
 			path = MCSwitcher;
@@ -126,6 +127,8 @@
 		AF9309221895B2CB00CB2A8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF93092A1895B2CC00CB2A8F /* AppDelegate.h */,
+				AF93092B1895B2CC00CB2A8F /* AppDelegate.m */,
 				AF9309231895B2CB00CB2A8F /* MCSwitcher-Info.plist */,
 				AF9309241895B2CB00CB2A8F /* InfoPlist.strings */,
 				AF9309271895B2CB00CB2A8F /* main.m */,
@@ -150,6 +153,54 @@
 				AF9309431895B2CC00CB2A8F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF9309501895B3DB00CB2A8F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AF93092D1895B2CC00CB2A8F /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		AF9309511895B3EF00CB2A8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF9309301895B2CC00CB2A8F /* ViewController.h */,
+				AF9309311895B2CC00CB2A8F /* ViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AF9309521895B3F700CB2A8F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AF9309531895B40200CB2A8F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		AF9309541895BEAA00CB2A8F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AF9309551895BEB900CB2A8F /* Fonts */,
+				AF9309331895B2CC00CB2A8F /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		AF9309551895BEB900CB2A8F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +282,7 @@
 				AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */,
 				AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */,
 				AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */,
+				AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +447,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -460,6 +514,7 @@
 				AF93094C1895B2CC00CB2A8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF93094D1895B2CC00CB2A8F /* Build configuration list for PBXNativeTarget "MCSwitcherTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +523,7 @@
 				AF93094F1895B2CC00CB2A8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
