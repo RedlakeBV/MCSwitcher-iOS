@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-107" y="-31"/>
+            <point key="canvasLocation" x="-359" y="-61"/>
         </scene>
         <!--Worlds View Controller - Worlds-->
         <scene sceneID="YtW-x0-gvk">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xy0-Ic-lE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="334" y="-31"/>
+            <point key="canvasLocation" x="96" y="-61"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
