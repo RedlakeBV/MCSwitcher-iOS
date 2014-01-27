@@ -6,18 +6,25 @@
 //  Copyright (c) 2014 Redlake. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MenuViewController.h"
 
-@interface ViewController ()
+@interface MenuViewController () {
+    
+    IBOutletCollection(UIButton) NSArray *buttons;
+    
+}
 
 @end
 
-@implementation ViewController
+@implementation MenuViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    for(UIButton * button in buttons) {
+        [[button titleLabel] setFont: font_kc_med(20)];
+    }
 }
 
 - (void)didReceiveMemoryWarning
