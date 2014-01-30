@@ -8,11 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MCLevelInfoCell : UITableViewCell {
-    
-    __weak IBOutlet UIImageView *thumbnailImage;
-    __weak IBOutlet UILabel *titleLabel;
-    __weak IBOutlet UILabel *subtitleLabel;
-}
+@interface MCLevelInfoCell : UITableViewCell
+
+@property (weak) IBOutlet UIImageView *thumbnailImage;
+@property (weak) IBOutlet UILabel *titleLabel;
+@property (weak) IBOutlet UILabel *subtitleLabel;
 
 @end
