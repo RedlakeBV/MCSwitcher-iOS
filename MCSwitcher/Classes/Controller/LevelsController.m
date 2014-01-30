@@ -62,7 +62,6 @@
     }
     NSMutableArray * levels = [[NSMutableArray alloc] init];
 
-    NSLog(@"%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc]);
     NSInteger counter = 0;
     NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:error];
     for(NSString * levelDirName in levelDirNames){
@@ -70,6 +69,7 @@
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
         Level * level = [[Level alloc] initWithDictionary:[LevelDataConverter readLevelAtPath:levelFileDirPath error:error]];
         if(level){
+            [level setRootDirectory: [NSString stringWithFormat:@"%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName]];
             [levels addObject: level];
         }
         
@@ -81,8 +81,11 @@
     return levels;
 }
 
--(Level*)toggleMode:(Level*) level; {
-    return nil;
+-(void)toggleMode:(Level*) level error:(NSError **)error {
+    [level setGameType: ![level gameType]];
+    [[[level player] abilities] setGameType: [level gameType]];
+    NSString * levelPath = [NSString stringWithFormat:@"%@/%@", [level rootDirectory], @"level.dat"];
+    [LevelDataConverter writeLevel:[level dictionary] ToPath:levelPath error:error];
 }
 
 -(Level*)toggleModeForLevelAtPath:(NSString*) level {

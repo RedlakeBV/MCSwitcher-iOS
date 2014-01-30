@@ -14,8 +14,7 @@
 +(id)shared;
 
 -(NSArray*)loadLevels:(NSError **)error;
--(Level*)toggleMode:(Level*) level;
--(Level*)toggleModeForLevelAtPath:(NSString*) level;
+-(void)toggleMode:(Level*) level error:(NSError **)error;
 +(NSString*)findMinecraftLocation:(NSError **)error;
 
 @end
