@@ -22,8 +22,19 @@
 {
     [super viewDidLoad];
 
+    
     for(UIButton * button in buttons) {
         [[button titleLabel] setFont: font_kc_med(20)];
+        if(USING_IPHONE4) {
+            CGRect newFrame = button.frame;
+            newFrame.origin.y -= 68;
+            button.frame = newFrame;
+        }
+        if(USING_iOS6) {
+            CGRect newFrame = button.frame;
+            newFrame.origin.y -= 20;
+            button.frame = newFrame;
+        }
     }
 }
 
