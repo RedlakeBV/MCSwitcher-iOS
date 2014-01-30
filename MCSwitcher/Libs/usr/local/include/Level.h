@@ -10,8 +10,9 @@
 #import "GameType.h"
 #import "Player.h"
 #import "Vector3f.h"
+#import "DictionaryConverter.h"
 
-@interface Level : NSObject
+@interface Level : NSObject <DictionaryConverter>
 
 @property GameType gameType;
 @property long lastPlayed;
@@ -28,9 +29,5 @@
 @property NSArray * entities;
 @property NSArray * tileEntities;
 @property NSFileHandle * rootDirectory;
-
-
-
-
 
 @end

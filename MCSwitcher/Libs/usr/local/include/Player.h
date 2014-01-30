@@ -8,17 +8,21 @@
 
 #import "LivingEntity.h"
 #import "PlayerAbilities.h"
+#import "DictionaryConverter.h"
+#import "Vector3f.h"
 
-@interface Player : LivingEntity
+@interface Player : LivingEntity <DictionaryConverter>
 
 @property NSArray * inventory;
 @property NSInteger score;
 @property NSInteger dimension;
-@property NSInteger bedPositionX, bedPositionY, bedPositionZ;
-@property NSInteger spawnX, spawnY, spawnZ;
+@property Vector3f * bedPosition;
+@property Vector3f * spawnPosition;
 @property short sleepTimer;
 @property BOOL sleeping;
 @property NSArray * armorSlots;
 @property PlayerAbilities * abilities;
+
+@property NSDictionary * playerDictionary;
 
 @end

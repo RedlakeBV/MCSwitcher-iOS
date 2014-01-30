@@ -1,20 +1,17 @@
 //
 //  LevelDataConverter.h
-//  MCEditor
+//  MCPTest
 //
-//  Created by Casper Eekhof on 28-01-14.
+//  Created by Casper Eekhof on 30-01-14.
 //  Copyright (c) 2014 Redlake. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
-#import "Level.h"
+#import "NBTKit.h"
 
 @interface LevelDataConverter : NSObject
 
-extern Byte header[];
-
-+(Level*) read:(NSString*)filePath;
-+(void) write:(Level*)level withFileHandle:(NSString*)filePath;
++(NSDictionary*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error;
++(void)writeLevel:(NSDictionary*)levelDict ToPath:(NSString*)path error:(NSError *__autoreleasing *)error;
 
 @end

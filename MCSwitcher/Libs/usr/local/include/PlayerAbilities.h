@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "GameType.h"
+#import "DictionaryConverter.h"
 
-@interface PlayerAbilities : NSObject
+@interface PlayerAbilities : NSObject <DictionaryConverter>
 
 @property BOOL mayFly;
 @property BOOL flying;
