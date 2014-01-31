@@ -16,13 +16,47 @@
 @end
 
 @implementation WorldsViewController
+BOOL didLoad;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    NSError * error;
-    _levels = [[LevelsController shared] loadLevels:&error];
+    [self reloadData];
+    didLoad = YES;
+}
+
+-(void)viewDidAppear:(BOOL)animated {
+    if(!didLoad)
+    [self reloadData];
+}
+
+
+-(void)reloadData {
+    _levels = [[LevelsController shared] loadLevels:^(NSError * error) {
+        if(error.code == -1) { // minecraft not installed
+            UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 150)];
+            [noMCInstalledLabel setText:@"You don't have Minecraft installed"];
+            [noMCInstalledLabel setFont: font_kc_med(25)];
+            [noMCInstalledLabel setBackgroundColor: [UIColor clearColor]];
+            [noMCInstalledLabel setTextAlignment: NSTextAlignmentCenter];
+            [noMCInstalledLabel setTextColor: [UIColor whiteColor]];
+            [noMCInstalledLabel setNumberOfLines:0];
+            
+            [[self view] addSubview: noMCInstalledLabel];
+        }
+    }];
+    if(![_levels count]) {
+        UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 150)];
+        [noMCInstalledLabel setText:@"You don't have any maps yet"];
+        [noMCInstalledLabel setFont: font_kc_med(25)];
+        [noMCInstalledLabel setBackgroundColor: [UIColor clearColor]];
+        [noMCInstalledLabel setTextAlignment: NSTextAlignmentCenter];
+        [noMCInstalledLabel setTextColor: [UIColor whiteColor]];
+        [noMCInstalledLabel setNumberOfLines:0];
+        
+        [[self view] addSubview: noMCInstalledLabel];
+    }
     
     [_levelsTableView reloadData];
 }

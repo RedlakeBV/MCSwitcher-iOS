@@ -10,6 +10,7 @@
 		AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */; };
 		AF600F1D1896BEE30077B0AC /* WorldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* WorldsViewController.m */; };
 		AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65ABF61896B65000178477 /* MCNavigationController.m */; };
+		AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF71D22D189BAC5D008E0019 /* level_header.dat */; };
 		AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */; };
 		AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
@@ -48,6 +49,7 @@
 		AF600F1C1896BEE30077B0AC /* WorldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorldsViewController.m; path = Classes/View/WorldsViewController.m; sourceTree = "<group>"; };
 		AF65ABF51896B65000178477 /* MCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCNavigationController.h; path = Classes/View/MCNavigationController.h; sourceTree = "<group>"; };
 		AF65ABF61896B65000178477 /* MCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCNavigationController.m; path = Classes/View/MCNavigationController.m; sourceTree = "<group>"; };
+		AF71D22D189BAC5D008E0019 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
 		AF9309181895B2CB00CB2A8F /* MCSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF93091B1895B2CB00CB2A8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -321,6 +323,7 @@
 		AFBC1E7D189B99D5008EA224 /* MCEditor */ = {
 			isa = PBXGroup;
 			children = (
+				AF71D22D189BAC5D008E0019 /* level_header.dat */,
 				AFBC1E7E189B99D5008EA224 /* libMCEditor.a */,
 				AFBC1E7F189B99D5008EA224 /* usr */,
 			);
@@ -503,6 +506,7 @@
 			files = (
 				AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */,
 				AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */,
+				AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */,
 				AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */,
 				AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */,
 			);

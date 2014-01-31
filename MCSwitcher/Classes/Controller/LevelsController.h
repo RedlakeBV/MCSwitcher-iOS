@@ -13,7 +13,9 @@
 
 +(id)shared;
 
--(NSArray*)loadLevels:(NSError **)error;
+typedef void (^FailBlock)(NSError* error);
+
+-(NSArray*)loadLevels:(FailBlock)error;
 -(void)toggleMode:(Level*) level error:(NSError **)error;
 +(NSString*)findMinecraftLocation:(NSError **)error;
 
