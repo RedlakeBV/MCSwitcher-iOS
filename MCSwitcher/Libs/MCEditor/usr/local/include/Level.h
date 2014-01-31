@@ -28,6 +28,6 @@
 @property BOOL spawnMobs;
 @property NSArray * entities;
 @property NSArray * tileEntities;
-@property NSFileHandle * rootDirectory;
+@property NSString * rootDirectory;
 
 @end
