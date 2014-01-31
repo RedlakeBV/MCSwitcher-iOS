@@ -67,7 +67,7 @@
     for(NSString * levelDirName in levelDirNames){
         if([levelDirName hasPrefix:@"_"]) continue;
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
-        Level * level = [[Level alloc] initWithDictionary:[LevelDataConverter readLevelAtPath:levelFileDirPath error:error]];
+        Level * level = [LevelDataConverter readLevelAtPath:levelFileDirPath error:error];
         if(level){
             [level setRootDirectory: [NSString stringWithFormat:@"%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName]];
             [levels addObject: level];
@@ -85,7 +85,7 @@
     [level setGameType: ![level gameType]];
     [[[level player] abilities] setGameType: [level gameType]];
     NSString * levelPath = [NSString stringWithFormat:@"%@/%@", [level rootDirectory], @"level.dat"];
-    [LevelDataConverter writeLevel:[level dictionary] ToPath:levelPath error:error];
+    [LevelDataConverter writeLevel:level ToPath:levelPath error:error];
 }
 
 -(Level*)toggleModeForLevelAtPath:(NSString*) level {
