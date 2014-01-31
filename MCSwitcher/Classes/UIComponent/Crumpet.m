@@ -23,7 +23,7 @@
 {
     self = [super init];
     if (self) {
-        [self setFrame: CGRectMake(25, [UIScreen mainScreen].bounds.size.height - 65, 270, 40)];
+        [self setFrame: CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 65, 320, 40)];
     }
     return self;
 }
@@ -44,7 +44,7 @@
     [[[[[UIApplication sharedApplication] keyWindow] subviews] lastObject] addSubview: self];
     [self setBackgroundColor: [UIColor whiteColor]];
     
-    UILabel * title = [[UILabel alloc] initWithFrame: CGRectMake(25, 0, 220, self.frame.size.height)];
+    UILabel * title = [[UILabel alloc] initWithFrame: CGRectMake(25, 0, 270, self.frame.size.height)];
     [title setText: message];
     [title setFont: font_kc_med(15)];
     [title setBackgroundColor: [UIColor clearColor]];

@@ -9,6 +9,7 @@
 #import "WorldsViewController.h"
 #import "MCLevelInfoCell.h"
 #import "LevelsController.h"
+#import "Crumpet.h"
 
 @interface WorldsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *levelsTableView;
@@ -75,6 +76,9 @@ BOOL didLoad;
         } else {
             [[levelCell thumbnailImage] setImage:[UIImage imageNamed:@"survival"]];
         }
+        [DEFAULTS setObject:[level rootDirectory] forKey:kLastPath];
+        NSString * switchedToString = [level gameType] == GameType_Creative ? @"creative" : @"survival";
+        [Crumpet showWithMessage:[NSString stringWithFormat:@"Level switched to %@", switchedToString]];
     }
 }
 

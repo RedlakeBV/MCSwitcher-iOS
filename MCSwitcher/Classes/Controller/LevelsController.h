@@ -17,6 +17,7 @@ typedef void (^FailBlock)(NSError* error);
 
 -(NSArray*)loadLevels:(FailBlock)error;
 -(void)toggleMode:(Level*) level error:(NSError **)error;
+-(void)toggleModeAtPath:(NSString*) path error:(NSError **)error;
 +(NSString*)findMinecraftLocation:(NSError **)error;
 
 @end

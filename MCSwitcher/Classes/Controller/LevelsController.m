@@ -104,6 +104,13 @@ BOOL noMCPE;
     [LevelDataConverter writeLevel:level ToPath:levelPath error:error];
 }
 
+-(void)toggleModeAtPath:(NSString*) path error:(NSError **)error {
+    NSString * levelPath = [NSString stringWithFormat:@"%@/%@", path, @"level.dat"];
+    Level * level = [LevelDataConverter readLevelAtPath:levelPath error:error];
+    [level setRootDirectory: path];
+    [self toggleMode:level error:error];
+}
+
 -(Level*)toggleModeForLevelAtPath:(NSString*) level {
     return nil;
 }

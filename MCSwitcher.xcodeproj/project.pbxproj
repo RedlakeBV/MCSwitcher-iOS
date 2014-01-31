@@ -11,6 +11,7 @@
 		AF600F1D1896BEE30077B0AC /* WorldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* WorldsViewController.m */; };
 		AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65ABF61896B65000178477 /* MCNavigationController.m */; };
 		AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF71D22D189BAC5D008E0019 /* level_header.dat */; };
+		AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF71D231189BAD5D008E0019 /* Crumpet.m */; };
 		AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */; };
 		AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
@@ -50,6 +51,8 @@
 		AF65ABF51896B65000178477 /* MCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCNavigationController.h; path = Classes/View/MCNavigationController.h; sourceTree = "<group>"; };
 		AF65ABF61896B65000178477 /* MCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCNavigationController.m; path = Classes/View/MCNavigationController.m; sourceTree = "<group>"; };
 		AF71D22D189BAC5D008E0019 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
+		AF71D230189BAD5D008E0019 /* Crumpet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crumpet.h; path = Classes/UIComponent/Crumpet.h; sourceTree = "<group>"; };
+		AF71D231189BAD5D008E0019 /* Crumpet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crumpet.m; path = Classes/UIComponent/Crumpet.m; sourceTree = "<group>"; };
 		AF9309181895B2CB00CB2A8F /* MCSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF93091B1895B2CB00CB2A8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,8 +152,8 @@
 		AF600F171896BCD00077B0AC /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */,
-				AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */,
+				AF71D22F189BAD4C008E0019 /* Crumpet */,
+				AF71D233189BAD64008E0019 /* MCLevelInfoCell */,
 			);
 			name = UIComponent;
 			sourceTree = "<group>";
@@ -180,6 +183,24 @@
 				AF65ABF61896B65000178477 /* MCNavigationController.m */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		AF71D22F189BAD4C008E0019 /* Crumpet */ = {
+			isa = PBXGroup;
+			children = (
+				AF71D230189BAD5D008E0019 /* Crumpet.h */,
+				AF71D231189BAD5D008E0019 /* Crumpet.m */,
+			);
+			name = Crumpet;
+			sourceTree = "<group>";
+		};
+		AF71D233189BAD64008E0019 /* MCLevelInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */,
+				AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */,
+			);
+			name = MCLevelInfoCell;
 			sourceTree = "<group>";
 		};
 		AF93090F1895B2CB00CB2A8F = {
@@ -527,6 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */,
 				AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */,
 				AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */,
 				AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */,
