@@ -10,23 +10,23 @@
 		AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */; };
 		AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* LevelsViewController.m */; };
 		AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65ABF61896B65000178477 /* MCNavigationController.m */; };
+		AF68DBFB189D8F930080EBF4 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFA189D8F930080EBF4 /* MenuViewController.m */; };
+		AF68DBFE189D8FA10080EBF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */; };
+		AF68DC00189D8FB10080EBF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFF189D8FB10080EBF4 /* main.m */; };
+		AF68DC02189D8FCB0080EBF4 /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */; };
+		AF68DC04189D8FD40080EBF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF68DC03189D8FD40080EBF4 /* Images.xcassets */; };
 		AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF71D22D189BAC5D008E0019 /* level_header.dat */; };
 		AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF71D231189BAD5D008E0019 /* Crumpet.m */; };
 		AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */; };
 		AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
 		AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9309241895B2CB00CB2A8F /* InfoPlist.strings */; };
-		AF9309281895B2CB00CB2A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309271895B2CB00CB2A8F /* main.m */; };
-		AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93092B1895B2CC00CB2A8F /* AppDelegate.m */; };
 		AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF93092D1895B2CC00CB2A8F /* Main.storyboard */; };
-		AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309311895B2CC00CB2A8F /* MenuViewController.m */; };
-		AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9309331895B2CC00CB2A8F /* Images.xcassets */; };
 		AF93093B1895B2CC00CB2A8F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93093A1895B2CC00CB2A8F /* XCTest.framework */; };
 		AF93093C1895B2CC00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93093D1895B2CC00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
 		AF9309451895B2CC00CB2A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9309431895B2CC00CB2A8F /* InfoPlist.strings */; };
 		AF9309471895B2CC00CB2A8F /* MCSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */; };
-		AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */; };
 		AFBC1DC8189A6974008EA224 /* LevelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBC1DC7189A6974008EA224 /* LevelsController.m */; };
 		AFBC1DD4189A7F55008EA224 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC1DD3189A7F55008EA224 /* libz.dylib */; };
 		AFBC1EB2189B99D5008EA224 /* libMCEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC1E7E189B99D5008EA224 /* libMCEditor.a */; };
@@ -50,6 +50,13 @@
 		AF600F1C1896BEE30077B0AC /* LevelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelsViewController.m; path = Classes/View/LevelsViewController.m; sourceTree = "<group>"; };
 		AF65ABF51896B65000178477 /* MCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCNavigationController.h; path = Classes/View/MCNavigationController.h; sourceTree = "<group>"; };
 		AF65ABF61896B65000178477 /* MCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCNavigationController.m; path = Classes/View/MCNavigationController.m; sourceTree = "<group>"; };
+		AF68DBF9189D8F930080EBF4 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Classes/View/MenuViewController.h; sourceTree = "<group>"; };
+		AF68DBFA189D8F930080EBF4 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Classes/View/MenuViewController.m; sourceTree = "<group>"; };
+		AF68DBFC189D8FA10080EBF4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MCSwitcher/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MCSwitcher/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		AF68DBFF189D8FB10080EBF4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = "<group>"; };
+		AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KeepCalm-Medium.ttf"; path = "Assets/Fonts/KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
+		AF68DC03189D8FD40080EBF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		AF71D22D189BAC5D008E0019 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
 		AF71D230189BAD5D008E0019 /* Crumpet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crumpet.h; path = Classes/UIComponent/Crumpet.h; sourceTree = "<group>"; };
 		AF71D231189BAD5D008E0019 /* Crumpet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crumpet.m; path = Classes/UIComponent/Crumpet.m; sourceTree = "<group>"; };
@@ -59,20 +66,13 @@
 		AF93091F1895B2CB00CB2A8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF9309231895B2CB00CB2A8F /* MCSwitcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCSwitcher-Info.plist"; sourceTree = "<group>"; };
 		AF9309251895B2CB00CB2A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF9309271895B2CB00CB2A8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF9309291895B2CC00CB2A8F /* MCSwitcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCSwitcher-Prefix.pch"; sourceTree = "<group>"; };
-		AF93092A1895B2CC00CB2A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AF93092B1895B2CC00CB2A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF93092E1895B2CC00CB2A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF9309301895B2CC00CB2A8F /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		AF9309311895B2CC00CB2A8F /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		AF9309331895B2CC00CB2A8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF9309391895B2CC00CB2A8F /* MCSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF93093A1895B2CC00CB2A8F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AF9309421895B2CC00CB2A8F /* MCSwitcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCSwitcherTests-Info.plist"; sourceTree = "<group>"; };
 		AF9309441895B2CC00CB2A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSwitcherTests.m; sourceTree = "<group>"; };
-		AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
 		AFBC1DC6189A6974008EA224 /* LevelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelsController.h; path = Classes/Controller/LevelsController.h; sourceTree = "<group>"; };
 		AFBC1DC7189A6974008EA224 /* LevelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelsController.m; path = Classes/Controller/LevelsController.m; sourceTree = "<group>"; };
 		AFBC1DD3189A7F55008EA224 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -170,8 +170,8 @@
 		AF65ABF41896B61C00178477 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				AF9309301895B2CC00CB2A8F /* MenuViewController.h */,
-				AF9309311895B2CC00CB2A8F /* MenuViewController.m */,
+				AF68DBF9189D8F930080EBF4 /* MenuViewController.h */,
+				AF68DBFA189D8F930080EBF4 /* MenuViewController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -252,11 +252,11 @@
 			isa = PBXGroup;
 			children = (
 				AFBC1D99189A6910008EA224 /* Libs */,
-				AF93092A1895B2CC00CB2A8F /* AppDelegate.h */,
-				AF93092B1895B2CC00CB2A8F /* AppDelegate.m */,
+				AF68DBFF189D8FB10080EBF4 /* main.m */,
+				AF68DBFC189D8FA10080EBF4 /* AppDelegate.h */,
+				AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */,
 				AF9309231895B2CB00CB2A8F /* MCSwitcher-Info.plist */,
 				AF9309241895B2CB00CB2A8F /* InfoPlist.strings */,
-				AF9309271895B2CB00CB2A8F /* main.m */,
 				AF9309291895B2CC00CB2A8F /* MCSwitcher-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -318,8 +318,8 @@
 		AF9309541895BEAA00CB2A8F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AF68DC03189D8FD40080EBF4 /* Images.xcassets */,
 				AF9309551895BEB900CB2A8F /* Fonts */,
-				AF9309331895B2CC00CB2A8F /* Images.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -327,7 +327,7 @@
 		AF9309551895BEB900CB2A8F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */,
+				AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -525,11 +525,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */,
 				AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */,
 				AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */,
+				AF68DC04189D8FD40080EBF4 /* Images.xcassets in Resources */,
 				AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */,
-				AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */,
+				AF68DC02189D8FCB0080EBF4 /* KeepCalm-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +549,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */,
-				AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */,
-				AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */,
+				AF68DBFB189D8F930080EBF4 /* MenuViewController.m in Sources */,
+				AF68DBFE189D8FA10080EBF4 /* AppDelegate.m in Sources */,
 				AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */,
 				AFBC1DC8189A6974008EA224 /* LevelsController.m in Sources */,
-				AF9309281895B2CB00CB2A8F /* main.m in Sources */,
 				AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */,
+				AF68DC00189D8FB10080EBF4 /* main.m in Sources */,
 				AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
