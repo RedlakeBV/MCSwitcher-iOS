@@ -10,7 +10,7 @@
 #import "LevelDataConverter.h"
 
 @implementation LevelsController
-
+BOOL noMCPE;
 
 +(id)shared {
     static id sharedMyManager = nil;
@@ -25,11 +25,17 @@
 {
     self = [super init];
     if (self) {
+        noMCPE = NO;
         if(![DEFAULTS objectForKey: kMinecraftLoc]) {
             NSError * error;
-            [DEFAULTS setObject:[LevelsController findMinecraftLocation:&error] forKey:kMinecraftLoc];
-            [DEFAULTS setObject:[NSString stringWithFormat:@"%@/%@", [DEFAULTS objectForKey:kMinecraftLoc],
-                                 microPathMCWorlds] forKey:kMinecraftWorldsLoc];
+            NSString * path = [LevelsController findMinecraftLocation:&error];
+            if(path) {
+                [DEFAULTS setObject:path forKey:kMinecraftLoc];
+                [DEFAULTS setObject:[NSString stringWithFormat:@"%@/%@", [DEFAULTS objectForKey:kMinecraftLoc],
+                                     microPathMCWorlds] forKey:kMinecraftWorldsLoc];
+            } else {
+                noMCPE = YES;
+            }
         }
     }
     return self;
@@ -47,7 +53,7 @@
             return appPath;
         }
     }
-
+    
     return nil;
 }
 
@@ -56,26 +62,36 @@
 }
 
 
--(NSArray*)loadLevels:(NSError **)error {
+-(NSArray*)loadLevels:(FailBlock)failBlock {
     if(![DEFAULTS objectForKey: kMinecraftLoc]) {
+        NSError * err = [NSError errorWithDomain:@"LevelsController" code:-1 userInfo:@{@"error" : @"Minecraft not installed"}];
+        if(noMCPE) {
+            failBlock(err);
+        }
+       
+        
         return nil; // No minecraft or not jailbroken
     }
     NSMutableArray * levels = [[NSMutableArray alloc] init];
-
+    
+    NSError * error;
     NSInteger counter = 0;
-    NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:error];
+    NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:&error];
     for(NSString * levelDirName in levelDirNames){
         if([levelDirName hasPrefix:@"_"]) continue;
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
-        Level * level = [[Level alloc] initWithDictionary:[LevelDataConverter readLevelAtPath:levelFileDirPath error:error]];
+        Level * level = [LevelDataConverter readLevelAtPath:levelFileDirPath error:&error];
         if(level){
             [level setRootDirectory: [NSString stringWithFormat:@"%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName]];
             [levels addObject: level];
         }
         
         if(counter != [levelDirNames count] -1)
-            error = nil; // Only respond to general issues
+        error = nil; // Only respond to general issues
         counter++;
+        
+        if(error)
+            failBlock(error);
     }
     
     return levels;
@@ -85,7 +101,14 @@
     [level setGameType: ![level gameType]];
     [[[level player] abilities] setGameType: [level gameType]];
     NSString * levelPath = [NSString stringWithFormat:@"%@/%@", [level rootDirectory], @"level.dat"];
-    [LevelDataConverter writeLevel:[level dictionary] ToPath:levelPath error:error];
+    [LevelDataConverter writeLevel:level ToPath:levelPath error:error];
+}
+
+-(void)toggleModeAtPath:(NSString*) path error:(NSError **)error {
+    NSString * levelPath = [NSString stringWithFormat:@"%@/%@", path, @"level.dat"];
+    Level * level = [LevelDataConverter readLevelAtPath:levelPath error:error];
+    [level setRootDirectory: path];
+    [self toggleMode:level error:error];
 }
 
 -(Level*)toggleModeForLevelAtPath:(NSString*) level {

@@ -7,6 +7,9 @@
 //
 
 #import "MenuViewController.h"
+#import "Crumpet.h"
+#import "LevelDataConverter.h"
+#import "LevelsController.h"
 
 @interface MenuViewController () {
     
@@ -42,6 +45,21 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)switchLastMapClicked:(id)sender {
+    if([DEFAULTS objectForKey:kLastPath]) {
+        NSError * err;
+        [[LevelsController shared] toggleModeAtPath:[DEFAULTS objectForKey:kLastPath] error:&err];
+        if(err) {
+            [Crumpet showWithMessage:@"Something went wrong"];
+            return;
+        }
+        
+        [Crumpet showWithMessage:@"Last world switched"];
+    } else {
+        [Crumpet showWithMessage:@"Switch a world first"];
+    }
 }
 
 @end

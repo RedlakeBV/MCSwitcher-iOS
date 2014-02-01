@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */; };
-		AF600F1D1896BEE30077B0AC /* WorldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* WorldsViewController.m */; };
+		AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* LevelsViewController.m */; };
 		AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65ABF61896B65000178477 /* MCNavigationController.m */; };
+		AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF71D22D189BAC5D008E0019 /* level_header.dat */; };
+		AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF71D231189BAD5D008E0019 /* Crumpet.m */; };
 		AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */; };
 		AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
@@ -44,10 +46,13 @@
 		AF600F161896B8600077B0AC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Helper/Constants.h; sourceTree = "<group>"; };
 		AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLevelInfoCell.h; path = Classes/UIComponent/MCLevelInfoCell.h; sourceTree = "<group>"; };
 		AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLevelInfoCell.m; path = Classes/UIComponent/MCLevelInfoCell.m; sourceTree = "<group>"; };
-		AF600F1B1896BEE30077B0AC /* WorldsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorldsViewController.h; path = Classes/View/WorldsViewController.h; sourceTree = "<group>"; };
-		AF600F1C1896BEE30077B0AC /* WorldsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorldsViewController.m; path = Classes/View/WorldsViewController.m; sourceTree = "<group>"; };
+		AF600F1B1896BEE30077B0AC /* LevelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelsViewController.h; path = Classes/View/LevelsViewController.h; sourceTree = "<group>"; };
+		AF600F1C1896BEE30077B0AC /* LevelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelsViewController.m; path = Classes/View/LevelsViewController.m; sourceTree = "<group>"; };
 		AF65ABF51896B65000178477 /* MCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCNavigationController.h; path = Classes/View/MCNavigationController.h; sourceTree = "<group>"; };
 		AF65ABF61896B65000178477 /* MCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCNavigationController.m; path = Classes/View/MCNavigationController.m; sourceTree = "<group>"; };
+		AF71D22D189BAC5D008E0019 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
+		AF71D230189BAD5D008E0019 /* Crumpet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crumpet.h; path = Classes/UIComponent/Crumpet.h; sourceTree = "<group>"; };
+		AF71D231189BAD5D008E0019 /* Crumpet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crumpet.m; path = Classes/UIComponent/Crumpet.m; sourceTree = "<group>"; };
 		AF9309181895B2CB00CB2A8F /* MCSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF93091B1895B2CB00CB2A8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,8 +152,8 @@
 		AF600F171896BCD00077B0AC /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
-				AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */,
-				AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */,
+				AF71D22F189BAD4C008E0019 /* Crumpet */,
+				AF71D233189BAD64008E0019 /* MCLevelInfoCell */,
 			);
 			name = UIComponent;
 			sourceTree = "<group>";
@@ -156,8 +161,8 @@
 		AF600F1E1896BEE70077B0AC /* World */ = {
 			isa = PBXGroup;
 			children = (
-				AF600F1B1896BEE30077B0AC /* WorldsViewController.h */,
-				AF600F1C1896BEE30077B0AC /* WorldsViewController.m */,
+				AF600F1B1896BEE30077B0AC /* LevelsViewController.h */,
+				AF600F1C1896BEE30077B0AC /* LevelsViewController.m */,
 			);
 			name = World;
 			sourceTree = "<group>";
@@ -178,6 +183,24 @@
 				AF65ABF61896B65000178477 /* MCNavigationController.m */,
 			);
 			name = Navigation;
+			sourceTree = "<group>";
+		};
+		AF71D22F189BAD4C008E0019 /* Crumpet */ = {
+			isa = PBXGroup;
+			children = (
+				AF71D230189BAD5D008E0019 /* Crumpet.h */,
+				AF71D231189BAD5D008E0019 /* Crumpet.m */,
+			);
+			name = Crumpet;
+			sourceTree = "<group>";
+		};
+		AF71D233189BAD64008E0019 /* MCLevelInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */,
+				AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */,
+			);
+			name = MCLevelInfoCell;
 			sourceTree = "<group>";
 		};
 		AF93090F1895B2CB00CB2A8F = {
@@ -321,6 +344,7 @@
 		AFBC1E7D189B99D5008EA224 /* MCEditor */ = {
 			isa = PBXGroup;
 			children = (
+				AF71D22D189BAC5D008E0019 /* level_header.dat */,
 				AFBC1E7E189B99D5008EA224 /* libMCEditor.a */,
 				AFBC1E7F189B99D5008EA224 /* usr */,
 			);
@@ -503,6 +527,7 @@
 			files = (
 				AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */,
 				AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */,
+				AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */,
 				AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */,
 				AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */,
 			);
@@ -523,13 +548,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */,
 				AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */,
 				AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */,
 				AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */,
 				AFBC1DC8189A6974008EA224 /* LevelsController.m in Sources */,
 				AF9309281895B2CB00CB2A8F /* main.m in Sources */,
 				AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */,
-				AF600F1D1896BEE30077B0AC /* WorldsViewController.m in Sources */,
+				AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +682,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Jailbroken Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbroken Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
@@ -666,6 +694,7 @@
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/MCEditor",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -675,6 +704,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Jailbroken Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbroken Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
@@ -685,6 +716,7 @@
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/MCEditor",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "NBTKit.h"
+#import "Level.h"
 
 @interface LevelDataConverter : NSObject
 
-+(NSDictionary*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error;
-+(void)writeLevel:(NSDictionary*)levelDict ToPath:(NSString*)path error:(NSError *__autoreleasing *)error;
++(Level*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error;
++(void)writeLevel:(Level*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error;
 
 @end
