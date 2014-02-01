@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 Redlake. All rights reserved.
 //
 
-#import "WorldsViewController.h"
+#import "LevelsViewController.h"
 #import "MCLevelInfoCell.h"
 #import "LevelsController.h"
 #import "Crumpet.h"
 
-@interface WorldsViewController ()
+@interface LevelsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *levelsTableView;
 
 @end
 
-@implementation WorldsViewController
+@implementation LevelsViewController
 BOOL didLoad;
 
 - (void)viewDidLoad
@@ -34,9 +34,12 @@ BOOL didLoad;
 
 
 -(void)reloadData {
+
+    __block BOOL errorOccured = NO;
     _levels = [[LevelsController shared] loadLevels:^(NSError * error) {
         if(error.code == -1) { // minecraft not installed
-            UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 150)];
+            errorOccured = YES;
+            UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 270, 150)];
             [noMCInstalledLabel setText:@"You don't have Minecraft installed"];
             [noMCInstalledLabel setFont: font_kc_med(25)];
             [noMCInstalledLabel setBackgroundColor: [UIColor clearColor]];
@@ -47,8 +50,9 @@ BOOL didLoad;
             [[self view] addSubview: noMCInstalledLabel];
         }
     }];
-    if(![_levels count]) {
-        UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 295, 150)];
+    
+    if(![_levels count] && !errorOccured) {
+        UILabel * noMCInstalledLabel = [[UILabel alloc] initWithFrame:CGRectMake(25, 0, 270, 150)];
         [noMCInstalledLabel setText:@"You don't have any maps yet"];
         [noMCInstalledLabel setFont: font_kc_med(25)];
         [noMCInstalledLabel setBackgroundColor: [UIColor clearColor]];

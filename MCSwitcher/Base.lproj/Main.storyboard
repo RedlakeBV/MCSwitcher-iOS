@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="-359" y="-61"/>
         </scene>
-        <!--Worlds View Controller - Worlds-->
+        <!--Levels View Controller - Worlds-->
         <scene sceneID="YtW-x0-gvk">
             <objects>
-                <viewController id="fKc-0z-fgf" customClass="WorldsViewController" sceneMemberID="viewController">
+                <viewController id="fKc-0z-fgf" customClass="LevelsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnK-ak-FuK">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

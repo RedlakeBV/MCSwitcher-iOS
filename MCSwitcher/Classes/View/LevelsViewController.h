@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WorldsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface LevelsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property NSArray * levels;
 
