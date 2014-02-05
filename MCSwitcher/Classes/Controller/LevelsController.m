@@ -27,7 +27,9 @@ BOOL noMCPE;
     self = [super init];
     if (self) {
         noMCPE = NO;
-//        if(![DEFAULTS objectForKey: kMinecraftLoc]) {
+        NSString * path = [DEFAULTS objectForKey: kMinecraftLoc];
+        // Check if there is already a default path from previous time, if so, check if it still exists.
+        if(!path || ![[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:nil]) {
             NSError * error;
             NSString * path = [LevelsController findMinecraftLocation:&error];
             if(path) {
@@ -37,7 +39,7 @@ BOOL noMCPE;
             } else {
                 noMCPE = YES;
             }
-//        }
+        }
     }
     return self;
 }
@@ -83,7 +85,7 @@ BOOL noMCPE;
     NSError * error;
     NSInteger counter = 0;
     NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:&error];
-//    [Crumpet showWithMessage:[NSString stringWithFormat:@"Before loading %i", [levelDirNames count]]];
+
     for(NSString * levelDirName in levelDirNames) {
         if([levelDirName hasPrefix:@"_"]) continue;
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
