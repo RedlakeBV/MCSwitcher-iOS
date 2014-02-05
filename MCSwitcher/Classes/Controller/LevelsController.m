@@ -8,6 +8,7 @@
 
 #import "LevelsController.h"
 #import "LevelDataConverter.h"
+#import "Crumpet.h"
 
 @implementation LevelsController
 BOOL noMCPE;
@@ -26,7 +27,7 @@ BOOL noMCPE;
     self = [super init];
     if (self) {
         noMCPE = NO;
-        if(![DEFAULTS objectForKey: kMinecraftLoc]) {
+//        if(![DEFAULTS objectForKey: kMinecraftLoc]) {
             NSError * error;
             NSString * path = [LevelsController findMinecraftLocation:&error];
             if(path) {
@@ -36,7 +37,7 @@ BOOL noMCPE;
             } else {
                 noMCPE = YES;
             }
-        }
+//        }
     }
     return self;
 }
@@ -47,6 +48,7 @@ BOOL noMCPE;
     
     NSArray * appDirContents;
     for(NSString * dirName in directoryContents){
+        
         NSString * appPath = [NSString stringWithFormat:@"%@%@", applicationsDir, dirName];
         appDirContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:appPath error:error];
         if([appDirContents containsObject:@"minecraftpe.app"]) {
@@ -63,6 +65,10 @@ BOOL noMCPE;
 
 
 -(NSArray*)loadLevels:(FailBlock)failBlock {
+//    if([DEFAULTS objectForKey: kMinecraftLoc])
+//    [Crumpet showWithMessage:[NSString stringWithFormat:@"Before loading %@", [[DEFAULTS objectForKey: kMinecraftLoc] substringWithRange:NSMakeRange(22, [[DEFAULTS objectForKey: kMinecraftLoc] length]-23 )]]];
+//    else
+//        [Crumpet showWithMessage:@"No location"];
     if(![DEFAULTS objectForKey: kMinecraftLoc]) {
         NSError * err = [NSError errorWithDomain:@"LevelsController" code:-1 userInfo:@{@"error" : @"Minecraft not installed"}];
         if(noMCPE) {
@@ -77,13 +83,17 @@ BOOL noMCPE;
     NSError * error;
     NSInteger counter = 0;
     NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:&error];
-    for(NSString * levelDirName in levelDirNames){
+//    [Crumpet showWithMessage:[NSString stringWithFormat:@"Before loading %i", [levelDirNames count]]];
+    for(NSString * levelDirName in levelDirNames) {
         if([levelDirName hasPrefix:@"_"]) continue;
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
         Level * level = [LevelDataConverter readLevelAtPath:levelFileDirPath error:&error];
         if(level){
             [level setRootDirectory: [NSString stringWithFormat:@"%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName]];
             [levels addObject: level];
+        } else {
+            break;
+
         }
         
         if(counter != [levelDirNames count] -1)
@@ -93,6 +103,7 @@ BOOL noMCPE;
         if(error)
             failBlock(error);
     }
+
     
     return levels;
 }
