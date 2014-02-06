@@ -7,29 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF36153318A2C2E800E8EEA8 /* libNBTKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF36153218A2C2E800E8EEA8 /* libNBTKit.a */; };
+		AF36153618A2D75100E8EEA8 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF36153518A2D75100E8EEA8 /* level_header.dat */; };
 		AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */; };
 		AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF600F1C1896BEE30077B0AC /* LevelsViewController.m */; };
+		AF648B6C18A3AF19005B990B /* libMCEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF648B4118A3AF19005B990B /* libMCEditor.a */; };
 		AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF65ABF61896B65000178477 /* MCNavigationController.m */; };
-		AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */ = {isa = PBXBuildFile; fileRef = AF71D22D189BAC5D008E0019 /* level_header.dat */; };
+		AF68DBFB189D8F930080EBF4 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFA189D8F930080EBF4 /* MenuViewController.m */; };
+		AF68DBFE189D8FA10080EBF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */; };
+		AF68DC00189D8FB10080EBF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF68DBFF189D8FB10080EBF4 /* main.m */; };
+		AF68DC02189D8FCB0080EBF4 /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */; };
+		AF68DC04189D8FD40080EBF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF68DC03189D8FD40080EBF4 /* Images.xcassets */; };
 		AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF71D231189BAD5D008E0019 /* Crumpet.m */; };
 		AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091D1895B2CB00CB2A8F /* CoreGraphics.framework */; };
 		AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
 		AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9309241895B2CB00CB2A8F /* InfoPlist.strings */; };
-		AF9309281895B2CB00CB2A8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309271895B2CB00CB2A8F /* main.m */; };
-		AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF93092B1895B2CC00CB2A8F /* AppDelegate.m */; };
 		AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF93092D1895B2CC00CB2A8F /* Main.storyboard */; };
-		AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309311895B2CC00CB2A8F /* MenuViewController.m */; };
-		AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9309331895B2CC00CB2A8F /* Images.xcassets */; };
 		AF93093B1895B2CC00CB2A8F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93093A1895B2CC00CB2A8F /* XCTest.framework */; };
 		AF93093C1895B2CC00CB2A8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091B1895B2CB00CB2A8F /* Foundation.framework */; };
 		AF93093D1895B2CC00CB2A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF93091F1895B2CB00CB2A8F /* UIKit.framework */; };
 		AF9309451895B2CC00CB2A8F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF9309431895B2CC00CB2A8F /* InfoPlist.strings */; };
 		AF9309471895B2CC00CB2A8F /* MCSwitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */; };
-		AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */; };
 		AFBC1DC8189A6974008EA224 /* LevelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBC1DC7189A6974008EA224 /* LevelsController.m */; };
 		AFBC1DD4189A7F55008EA224 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC1DD3189A7F55008EA224 /* libz.dylib */; };
-		AFBC1EB2189B99D5008EA224 /* libMCEditor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFBC1E7E189B99D5008EA224 /* libMCEditor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,14 +44,61 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF36153218A2C2E800E8EEA8 /* libNBTKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libNBTKit.a; sourceTree = "<group>"; };
+		AF36153518A2D75100E8EEA8 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
 		AF600F161896B8600077B0AC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Classes/Helper/Constants.h; sourceTree = "<group>"; };
 		AF600F181896BCF80077B0AC /* MCLevelInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLevelInfoCell.h; path = Classes/UIComponent/MCLevelInfoCell.h; sourceTree = "<group>"; };
 		AF600F191896BCF80077B0AC /* MCLevelInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLevelInfoCell.m; path = Classes/UIComponent/MCLevelInfoCell.m; sourceTree = "<group>"; };
 		AF600F1B1896BEE30077B0AC /* LevelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelsViewController.h; path = Classes/View/LevelsViewController.h; sourceTree = "<group>"; };
 		AF600F1C1896BEE30077B0AC /* LevelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelsViewController.m; path = Classes/View/LevelsViewController.m; sourceTree = "<group>"; };
+		AF648B4118A3AF19005B990B /* libMCEditor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMCEditor.a; sourceTree = "<group>"; };
+		AF648B4518A3AF19005B990B /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		AF648B4618A3AF19005B990B /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrow.h; sourceTree = "<group>"; };
+		AF648B4718A3AF19005B990B /* ChestTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChestTileEntity.h; sourceTree = "<group>"; };
+		AF648B4818A3AF19005B990B /* Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chicken.h; sourceTree = "<group>"; };
+		AF648B4918A3AF19005B990B /* ContainerTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerTileEntity.h; sourceTree = "<group>"; };
+		AF648B4A18A3AF19005B990B /* Cow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cow.h; sourceTree = "<group>"; };
+		AF648B4B18A3AF19005B990B /* Creeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creeper.h; sourceTree = "<group>"; };
+		AF648B4C18A3AF19005B990B /* DictionaryConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryConverter.h; sourceTree = "<group>"; };
+		AF648B4D18A3AF19005B990B /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
+		AF648B4E18A3AF19005B990B /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		AF648B4F18A3AF19005B990B /* EntityDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDataConverter.h; sourceTree = "<group>"; };
+		AF648B5018A3AF19005B990B /* EntityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityType.h; sourceTree = "<group>"; };
+		AF648B5118A3AF19005B990B /* FallingBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallingBlock.h; sourceTree = "<group>"; };
+		AF648B5218A3AF19005B990B /* FurnaceTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FurnaceTileEntity.h; sourceTree = "<group>"; };
+		AF648B5318A3AF19005B990B /* GameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameType.h; sourceTree = "<group>"; };
+		AF648B5418A3AF19005B990B /* InventorySlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventorySlot.h; sourceTree = "<group>"; };
+		AF648B5518A3AF19005B990B /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		AF648B5618A3AF19005B990B /* ItemStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStack.h; sourceTree = "<group>"; };
+		AF648B5718A3AF19005B990B /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		AF648B5818A3AF19005B990B /* LevelDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDataConverter.h; sourceTree = "<group>"; };
+		AF648B5918A3AF19005B990B /* LivingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingEntity.h; sourceTree = "<group>"; };
+		AF648B5A18A3AF19005B990B /* Minecart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minecart.h; sourceTree = "<group>"; };
+		AF648B5B18A3AF19005B990B /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		AF648B5C18A3AF19005B990B /* NetherReactorTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetherReactorTileEntity.h; sourceTree = "<group>"; };
+		AF648B5D18A3AF19005B990B /* Painting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Painting.h; sourceTree = "<group>"; };
+		AF648B5E18A3AF19005B990B /* Pig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pig.h; sourceTree = "<group>"; };
+		AF648B5F18A3AF19005B990B /* PigZombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigZombie.h; sourceTree = "<group>"; };
+		AF648B6018A3AF19005B990B /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		AF648B6118A3AF19005B990B /* PlayerAbilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAbilities.h; sourceTree = "<group>"; };
+		AF648B6218A3AF19005B990B /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
+		AF648B6318A3AF19005B990B /* Sheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sheep.h; sourceTree = "<group>"; };
+		AF648B6418A3AF19005B990B /* SignTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignTileEntity.h; sourceTree = "<group>"; };
+		AF648B6518A3AF19005B990B /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
+		AF648B6618A3AF19005B990B /* Snowball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snowball.h; sourceTree = "<group>"; };
+		AF648B6718A3AF19005B990B /* Spider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
+		AF648B6818A3AF19005B990B /* TNTPrimed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTPrimed.h; sourceTree = "<group>"; };
+		AF648B6918A3AF19005B990B /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
+		AF648B6A18A3AF19005B990B /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
 		AF65ABF51896B65000178477 /* MCNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCNavigationController.h; path = Classes/View/MCNavigationController.h; sourceTree = "<group>"; };
 		AF65ABF61896B65000178477 /* MCNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCNavigationController.m; path = Classes/View/MCNavigationController.m; sourceTree = "<group>"; };
-		AF71D22D189BAC5D008E0019 /* level_header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = level_header.dat; sourceTree = "<group>"; };
+		AF68DBF9189D8F930080EBF4 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuViewController.h; path = Classes/View/MenuViewController.h; sourceTree = "<group>"; };
+		AF68DBFA189D8F930080EBF4 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuViewController.m; path = Classes/View/MenuViewController.m; sourceTree = "<group>"; };
+		AF68DBFC189D8FA10080EBF4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MCSwitcher/Classes/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MCSwitcher/Classes/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		AF68DBFF189D8FB10080EBF4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Classes/main.m; sourceTree = "<group>"; };
+		AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "KeepCalm-Medium.ttf"; path = "Assets/Fonts/KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
+		AF68DC03189D8FD40080EBF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Assets/Images.xcassets; sourceTree = "<group>"; };
 		AF71D230189BAD5D008E0019 /* Crumpet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crumpet.h; path = Classes/UIComponent/Crumpet.h; sourceTree = "<group>"; };
 		AF71D231189BAD5D008E0019 /* Crumpet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crumpet.m; path = Classes/UIComponent/Crumpet.m; sourceTree = "<group>"; };
 		AF9309181895B2CB00CB2A8F /* MCSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,64 +107,16 @@
 		AF93091F1895B2CB00CB2A8F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF9309231895B2CB00CB2A8F /* MCSwitcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCSwitcher-Info.plist"; sourceTree = "<group>"; };
 		AF9309251895B2CB00CB2A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF9309271895B2CB00CB2A8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF9309291895B2CC00CB2A8F /* MCSwitcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MCSwitcher-Prefix.pch"; sourceTree = "<group>"; };
-		AF93092A1895B2CC00CB2A8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AF93092B1895B2CC00CB2A8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF93092E1895B2CC00CB2A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AF9309301895B2CC00CB2A8F /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
-		AF9309311895B2CC00CB2A8F /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
-		AF9309331895B2CC00CB2A8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AF9309391895B2CC00CB2A8F /* MCSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF93093A1895B2CC00CB2A8F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AF9309421895B2CC00CB2A8F /* MCSwitcherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCSwitcherTests-Info.plist"; sourceTree = "<group>"; };
 		AF9309441895B2CC00CB2A8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF9309461895B2CC00CB2A8F /* MCSwitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSwitcherTests.m; sourceTree = "<group>"; };
-		AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KeepCalm-Medium.ttf"; sourceTree = "<group>"; };
 		AFBC1DC6189A6974008EA224 /* LevelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LevelsController.h; path = Classes/Controller/LevelsController.h; sourceTree = "<group>"; };
 		AFBC1DC7189A6974008EA224 /* LevelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LevelsController.m; path = Classes/Controller/LevelsController.m; sourceTree = "<group>"; };
 		AFBC1DD3189A7F55008EA224 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		AFBC1E7E189B99D5008EA224 /* libMCEditor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMCEditor.a; sourceTree = "<group>"; };
-		AFBC1E82189B99D5008EA224 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
-		AFBC1E83189B99D5008EA224 /* Arrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Arrow.h; sourceTree = "<group>"; };
-		AFBC1E84189B99D5008EA224 /* ChestTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChestTileEntity.h; sourceTree = "<group>"; };
-		AFBC1E85189B99D5008EA224 /* ChestTileEntityStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChestTileEntityStore.h; sourceTree = "<group>"; };
-		AFBC1E86189B99D5008EA224 /* Chicken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chicken.h; sourceTree = "<group>"; };
-		AFBC1E87189B99D5008EA224 /* ContainerTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerTileEntity.h; sourceTree = "<group>"; };
-		AFBC1E88189B99D5008EA224 /* Cow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cow.h; sourceTree = "<group>"; };
-		AFBC1E89189B99D5008EA224 /* Creeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creeper.h; sourceTree = "<group>"; };
-		AFBC1E8A189B99D5008EA224 /* DictionaryConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryConverter.h; sourceTree = "<group>"; };
-		AFBC1E8B189B99D5008EA224 /* Egg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Egg.h; sourceTree = "<group>"; };
-		AFBC1E8C189B99D5008EA224 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
-		AFBC1E8D189B99D5008EA224 /* EntityDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDataConverter.h; sourceTree = "<group>"; };
-		AFBC1E8E189B99D5008EA224 /* EntityType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityType.h; sourceTree = "<group>"; };
-		AFBC1E8F189B99D5008EA224 /* FallingBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FallingBlock.h; sourceTree = "<group>"; };
-		AFBC1E90189B99D5008EA224 /* FurnaceTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FurnaceTileEntity.h; sourceTree = "<group>"; };
-		AFBC1E91189B99D5008EA224 /* GameType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameType.h; sourceTree = "<group>"; };
-		AFBC1E92189B99D5008EA224 /* InventorySlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventorySlot.h; sourceTree = "<group>"; };
-		AFBC1E93189B99D5008EA224 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		AFBC1E94189B99D5008EA224 /* ItemStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStack.h; sourceTree = "<group>"; };
-		AFBC1E95189B99D5008EA224 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
-		AFBC1E96189B99D5008EA224 /* LevelDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelDataConverter.h; sourceTree = "<group>"; };
-		AFBC1E97189B99D5008EA224 /* LivingEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivingEntity.h; sourceTree = "<group>"; };
-		AFBC1E98189B99D5008EA224 /* Minecart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Minecart.h; sourceTree = "<group>"; };
-		AFBC1E99189B99D5008EA224 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
-		AFBC1E9A189B99D5008EA224 /* NetherReactorTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetherReactorTileEntity.h; sourceTree = "<group>"; };
-		AFBC1E9B189B99D5008EA224 /* Painting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Painting.h; sourceTree = "<group>"; };
-		AFBC1E9C189B99D5008EA224 /* Pig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pig.h; sourceTree = "<group>"; };
-		AFBC1E9D189B99D5008EA224 /* PigZombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PigZombie.h; sourceTree = "<group>"; };
-		AFBC1E9E189B99D5008EA224 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		AFBC1E9F189B99D5008EA224 /* PlayerAbilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerAbilities.h; sourceTree = "<group>"; };
-		AFBC1EA0189B99D5008EA224 /* Projectile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Projectile.h; sourceTree = "<group>"; };
-		AFBC1EA1189B99D5008EA224 /* Sheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sheep.h; sourceTree = "<group>"; };
-		AFBC1EA2189B99D5008EA224 /* SignTileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignTileEntity.h; sourceTree = "<group>"; };
-		AFBC1EA3189B99D5008EA224 /* Skeleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Skeleton.h; sourceTree = "<group>"; };
-		AFBC1EA4189B99D5008EA224 /* Snowball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snowball.h; sourceTree = "<group>"; };
-		AFBC1EA5189B99D5008EA224 /* Spider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spider.h; sourceTree = "<group>"; };
-		AFBC1EA6189B99D5008EA224 /* TileEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileEntity.h; sourceTree = "<group>"; };
-		AFBC1EA7189B99D5008EA224 /* TNTPrimed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNTPrimed.h; sourceTree = "<group>"; };
-		AFBC1EA8189B99D5008EA224 /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
-		AFBC1EA9189B99D5008EA224 /* Zombie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zombie.h; sourceTree = "<group>"; };
 		AFBC1EAE189B99D5008EA224 /* MCRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRegion.h; sourceTree = "<group>"; };
 		AFBC1EAF189B99D5008EA224 /* NBTIntArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTIntArray.h; sourceTree = "<group>"; };
 		AFBC1EB0189B99D5008EA224 /* NBTKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBTKit.h; sourceTree = "<group>"; };
@@ -129,8 +129,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFBC1DD4189A7F55008EA224 /* libz.dylib in Frameworks */,
-				AFBC1EB2189B99D5008EA224 /* libMCEditor.a in Frameworks */,
 				AF93091E1895B2CB00CB2A8F /* CoreGraphics.framework in Frameworks */,
+				AF648B6C18A3AF19005B990B /* libMCEditor.a in Frameworks */,
+				AF36153318A2C2E800E8EEA8 /* libNBTKit.a in Frameworks */,
 				AF9309201895B2CB00CB2A8F /* UIKit.framework in Frameworks */,
 				AF93091C1895B2CB00CB2A8F /* Foundation.framework in Frameworks */,
 			);
@@ -149,6 +150,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF36153418A2D75100E8EEA8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF36153518A2D75100E8EEA8 /* level_header.dat */,
+			);
+			name = Data;
+			path = Assets/Data;
+			sourceTree = "<group>";
+		};
 		AF600F171896BCD00077B0AC /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,11 +177,81 @@
 			name = World;
 			sourceTree = "<group>";
 		};
+		AF648B3F18A3AF19005B990B /* MCEditor */ = {
+			isa = PBXGroup;
+			children = (
+				AF648B4118A3AF19005B990B /* libMCEditor.a */,
+				AF648B4218A3AF19005B990B /* usr */,
+			);
+			path = MCEditor;
+			sourceTree = "<group>";
+		};
+		AF648B4218A3AF19005B990B /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				AF648B4318A3AF19005B990B /* local */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		AF648B4318A3AF19005B990B /* local */ = {
+			isa = PBXGroup;
+			children = (
+				AF648B4418A3AF19005B990B /* include */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
+		AF648B4418A3AF19005B990B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				AF648B4518A3AF19005B990B /* Animal.h */,
+				AF648B4618A3AF19005B990B /* Arrow.h */,
+				AF648B4718A3AF19005B990B /* ChestTileEntity.h */,
+				AF648B4818A3AF19005B990B /* Chicken.h */,
+				AF648B4918A3AF19005B990B /* ContainerTileEntity.h */,
+				AF648B4A18A3AF19005B990B /* Cow.h */,
+				AF648B4B18A3AF19005B990B /* Creeper.h */,
+				AF648B4C18A3AF19005B990B /* DictionaryConverter.h */,
+				AF648B4D18A3AF19005B990B /* Egg.h */,
+				AF648B4E18A3AF19005B990B /* Entity.h */,
+				AF648B4F18A3AF19005B990B /* EntityDataConverter.h */,
+				AF648B5018A3AF19005B990B /* EntityType.h */,
+				AF648B5118A3AF19005B990B /* FallingBlock.h */,
+				AF648B5218A3AF19005B990B /* FurnaceTileEntity.h */,
+				AF648B5318A3AF19005B990B /* GameType.h */,
+				AF648B5418A3AF19005B990B /* InventorySlot.h */,
+				AF648B5518A3AF19005B990B /* Item.h */,
+				AF648B5618A3AF19005B990B /* ItemStack.h */,
+				AF648B5718A3AF19005B990B /* Level.h */,
+				AF648B5818A3AF19005B990B /* LevelDataConverter.h */,
+				AF648B5918A3AF19005B990B /* LivingEntity.h */,
+				AF648B5A18A3AF19005B990B /* Minecart.h */,
+				AF648B5B18A3AF19005B990B /* Monster.h */,
+				AF648B5C18A3AF19005B990B /* NetherReactorTileEntity.h */,
+				AF648B5D18A3AF19005B990B /* Painting.h */,
+				AF648B5E18A3AF19005B990B /* Pig.h */,
+				AF648B5F18A3AF19005B990B /* PigZombie.h */,
+				AF648B6018A3AF19005B990B /* Player.h */,
+				AF648B6118A3AF19005B990B /* PlayerAbilities.h */,
+				AF648B6218A3AF19005B990B /* Projectile.h */,
+				AF648B6318A3AF19005B990B /* Sheep.h */,
+				AF648B6418A3AF19005B990B /* SignTileEntity.h */,
+				AF648B6518A3AF19005B990B /* Skeleton.h */,
+				AF648B6618A3AF19005B990B /* Snowball.h */,
+				AF648B6718A3AF19005B990B /* Spider.h */,
+				AF648B6818A3AF19005B990B /* TNTPrimed.h */,
+				AF648B6918A3AF19005B990B /* Vector3f.h */,
+				AF648B6A18A3AF19005B990B /* Zombie.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		AF65ABF41896B61C00178477 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				AF9309301895B2CC00CB2A8F /* MenuViewController.h */,
-				AF9309311895B2CC00CB2A8F /* MenuViewController.m */,
+				AF68DBF9189D8F930080EBF4 /* MenuViewController.h */,
+				AF68DBFA189D8F930080EBF4 /* MenuViewController.m */,
 			);
 			name = Menu;
 			sourceTree = "<group>";
@@ -252,11 +332,11 @@
 			isa = PBXGroup;
 			children = (
 				AFBC1D99189A6910008EA224 /* Libs */,
-				AF93092A1895B2CC00CB2A8F /* AppDelegate.h */,
-				AF93092B1895B2CC00CB2A8F /* AppDelegate.m */,
+				AF68DBFF189D8FB10080EBF4 /* main.m */,
+				AF68DBFC189D8FA10080EBF4 /* AppDelegate.h */,
+				AF68DBFD189D8FA10080EBF4 /* AppDelegate.m */,
 				AF9309231895B2CB00CB2A8F /* MCSwitcher-Info.plist */,
 				AF9309241895B2CB00CB2A8F /* InfoPlist.strings */,
-				AF9309271895B2CB00CB2A8F /* main.m */,
 				AF9309291895B2CC00CB2A8F /* MCSwitcher-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -318,8 +398,9 @@
 		AF9309541895BEAA00CB2A8F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				AF36153418A2D75100E8EEA8 /* Data */,
+				AF68DC03189D8FD40080EBF4 /* Images.xcassets */,
 				AF9309551895BEB900CB2A8F /* Fonts */,
-				AF9309331895B2CC00CB2A8F /* Images.xcassets */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -327,7 +408,7 @@
 		AF9309551895BEB900CB2A8F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				AF9309561895BED200CB2A8F /* KeepCalm-Medium.ttf */,
+				AF68DC01189D8FCB0080EBF4 /* KeepCalm-Medium.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -335,88 +416,16 @@
 		AFBC1D99189A6910008EA224 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				AFBC1E7D189B99D5008EA224 /* MCEditor */,
+				AF648B3F18A3AF19005B990B /* MCEditor */,
 				AFBC1EAA189B99D5008EA224 /* NBTKit */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
 		};
-		AFBC1E7D189B99D5008EA224 /* MCEditor */ = {
-			isa = PBXGroup;
-			children = (
-				AF71D22D189BAC5D008E0019 /* level_header.dat */,
-				AFBC1E7E189B99D5008EA224 /* libMCEditor.a */,
-				AFBC1E7F189B99D5008EA224 /* usr */,
-			);
-			path = MCEditor;
-			sourceTree = "<group>";
-		};
-		AFBC1E7F189B99D5008EA224 /* usr */ = {
-			isa = PBXGroup;
-			children = (
-				AFBC1E80189B99D5008EA224 /* local */,
-			);
-			path = usr;
-			sourceTree = "<group>";
-		};
-		AFBC1E80189B99D5008EA224 /* local */ = {
-			isa = PBXGroup;
-			children = (
-				AFBC1E81189B99D5008EA224 /* include */,
-			);
-			path = local;
-			sourceTree = "<group>";
-		};
-		AFBC1E81189B99D5008EA224 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				AFBC1E82189B99D5008EA224 /* Animal.h */,
-				AFBC1E83189B99D5008EA224 /* Arrow.h */,
-				AFBC1E84189B99D5008EA224 /* ChestTileEntity.h */,
-				AFBC1E85189B99D5008EA224 /* ChestTileEntityStore.h */,
-				AFBC1E86189B99D5008EA224 /* Chicken.h */,
-				AFBC1E87189B99D5008EA224 /* ContainerTileEntity.h */,
-				AFBC1E88189B99D5008EA224 /* Cow.h */,
-				AFBC1E89189B99D5008EA224 /* Creeper.h */,
-				AFBC1E8A189B99D5008EA224 /* DictionaryConverter.h */,
-				AFBC1E8B189B99D5008EA224 /* Egg.h */,
-				AFBC1E8C189B99D5008EA224 /* Entity.h */,
-				AFBC1E8D189B99D5008EA224 /* EntityDataConverter.h */,
-				AFBC1E8E189B99D5008EA224 /* EntityType.h */,
-				AFBC1E8F189B99D5008EA224 /* FallingBlock.h */,
-				AFBC1E90189B99D5008EA224 /* FurnaceTileEntity.h */,
-				AFBC1E91189B99D5008EA224 /* GameType.h */,
-				AFBC1E92189B99D5008EA224 /* InventorySlot.h */,
-				AFBC1E93189B99D5008EA224 /* Item.h */,
-				AFBC1E94189B99D5008EA224 /* ItemStack.h */,
-				AFBC1E95189B99D5008EA224 /* Level.h */,
-				AFBC1E96189B99D5008EA224 /* LevelDataConverter.h */,
-				AFBC1E97189B99D5008EA224 /* LivingEntity.h */,
-				AFBC1E98189B99D5008EA224 /* Minecart.h */,
-				AFBC1E99189B99D5008EA224 /* Monster.h */,
-				AFBC1E9A189B99D5008EA224 /* NetherReactorTileEntity.h */,
-				AFBC1E9B189B99D5008EA224 /* Painting.h */,
-				AFBC1E9C189B99D5008EA224 /* Pig.h */,
-				AFBC1E9D189B99D5008EA224 /* PigZombie.h */,
-				AFBC1E9E189B99D5008EA224 /* Player.h */,
-				AFBC1E9F189B99D5008EA224 /* PlayerAbilities.h */,
-				AFBC1EA0189B99D5008EA224 /* Projectile.h */,
-				AFBC1EA1189B99D5008EA224 /* Sheep.h */,
-				AFBC1EA2189B99D5008EA224 /* SignTileEntity.h */,
-				AFBC1EA3189B99D5008EA224 /* Skeleton.h */,
-				AFBC1EA4189B99D5008EA224 /* Snowball.h */,
-				AFBC1EA5189B99D5008EA224 /* Spider.h */,
-				AFBC1EA6189B99D5008EA224 /* TileEntity.h */,
-				AFBC1EA7189B99D5008EA224 /* TNTPrimed.h */,
-				AFBC1EA8189B99D5008EA224 /* Vector3f.h */,
-				AFBC1EA9189B99D5008EA224 /* Zombie.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
 		AFBC1EAA189B99D5008EA224 /* NBTKit */ = {
 			isa = PBXGroup;
 			children = (
+				AF36153218A2C2E800E8EEA8 /* libNBTKit.a */,
 				AFBC1EAB189B99D5008EA224 /* usr */,
 			);
 			path = NBTKit;
@@ -525,11 +534,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF9309341895B2CC00CB2A8F /* Images.xcassets in Resources */,
 				AF9309261895B2CB00CB2A8F /* InfoPlist.strings in Resources */,
-				AF71D22E189BAC5D008E0019 /* level_header.dat in Resources */,
+				AF68DC04189D8FD40080EBF4 /* Images.xcassets in Resources */,
+				AF36153618A2D75100E8EEA8 /* level_header.dat in Resources */,
 				AF93092F1895B2CC00CB2A8F /* Main.storyboard in Resources */,
-				AF9309571895BED200CB2A8F /* KeepCalm-Medium.ttf in Resources */,
+				AF68DC02189D8FCB0080EBF4 /* KeepCalm-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,12 +558,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF71D232189BAD5D008E0019 /* Crumpet.m in Sources */,
-				AF9309321895B2CC00CB2A8F /* MenuViewController.m in Sources */,
-				AF93092C1895B2CC00CB2A8F /* AppDelegate.m in Sources */,
+				AF68DBFB189D8F930080EBF4 /* MenuViewController.m in Sources */,
+				AF68DBFE189D8FA10080EBF4 /* AppDelegate.m in Sources */,
 				AF600F1A1896BCF80077B0AC /* MCLevelInfoCell.m in Sources */,
 				AFBC1DC8189A6974008EA224 /* LevelsController.m in Sources */,
-				AF9309281895B2CB00CB2A8F /* main.m in Sources */,
 				AF65ABF71896B65000178477 /* MCNavigationController.m in Sources */,
+				AF68DC00189D8FB10080EBF4 /* main.m in Sources */,
 				AF600F1D1896BEE30077B0AC /* LevelsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,16 +691,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "Jailbroken Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbroken Developer";
+				CODE_SIGN_IDENTITY = "Jailbreak Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbreak Development";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs",
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/MCEditor",
+					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/NBTKit",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -704,16 +714,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "Jailbroken Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbroken Developer";
+				CODE_SIGN_IDENTITY = "Jailbreak Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Jailbreak Development";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MCSwitcher/MCSwitcher-Prefix.pch";
 				INFOPLIST_FILE = "MCSwitcher/MCSwitcher-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs",
 					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/MCEditor",
+					"/Users/Casper/Documents/workspace/Objective-C/iOS/MCSwitcher-iOS/MCSwitcher/Libs/NBTKit",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

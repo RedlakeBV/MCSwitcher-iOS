@@ -20,6 +20,7 @@
 #define kMinecraftWorldsLoc @"minecraft_worlds_loc"
 #define microPathMCWorlds @"Documents/games/com.mojang/minecraftWorlds/"
 #define kLastPath @"last_level_path"
+#define LatestStorageVersion 3
 
 #define USING_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
 #define USING_IPHONE4 (([[UIScreen mainScreen] bounds].size.height-480)?NO:YES)

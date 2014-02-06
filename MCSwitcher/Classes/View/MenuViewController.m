@@ -8,7 +8,6 @@
 
 #import "MenuViewController.h"
 #import "Crumpet.h"
-#import "LevelDataConverter.h"
 #import "LevelsController.h"
 
 @interface MenuViewController () {
@@ -50,9 +49,12 @@
 - (IBAction)switchLastMapClicked:(id)sender {
     if([DEFAULTS objectForKey:kLastPath]) {
         NSError * err;
-        [[LevelsController shared] toggleModeAtPath:[DEFAULTS objectForKey:kLastPath] error:&err];
+        BOOL success = [[LevelsController shared] toggleModeAtPath:[DEFAULTS objectForKey:kLastPath] error:&err];
         if(err) {
             [Crumpet showWithMessage:@"Something went wrong"];
+            return;
+        } else if(!success) {
+            [Crumpet showWithMessage:@"You deleted the last"];
             return;
         }
         
