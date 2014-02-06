@@ -15,4 +15,7 @@
 +(Level*)readLevelAtPath:(NSString*)path error:(NSError *__autoreleasing *)error;
 +(void)writeLevel:(Level*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error;
 
++(NSDictionary*)readLevelDictionaryAtPath:(NSString*)path error:(NSError *__autoreleasing *)error;
++(void)writeLevelDictionary:(NSDictionary*)level ToPath:(NSString*)path error:(NSError *__autoreleasing *)error;
+
 @end

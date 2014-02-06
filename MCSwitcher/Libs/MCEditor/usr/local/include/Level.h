@@ -14,20 +14,23 @@
 
 @interface Level : NSObject <DictionaryConverter>
 
-@property GameType gameType;
+@property (nonatomic) GameType gameType;
 @property long lastPlayed;
 @property NSString * levelName;
-@property NSInteger platform;
+@property int platform;
 @property Player * player;
 @property long randomSeed;
 @property long sizeOnDisk;
 @property Vector3f * spawnPosition;
-@property NSInteger storageVersion;
+@property int storageVersion;
 @property long time;
 @property long dayCycleStopTime;
 @property BOOL spawnMobs;
 @property NSArray * entities;
 @property NSArray * tileEntities;
 @property NSString * rootDirectory;
+
+
+@property NSDictionary * rawLevelDictionary;
 
 @end

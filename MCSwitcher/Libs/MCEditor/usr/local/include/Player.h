@@ -14,8 +14,8 @@
 @interface Player : LivingEntity <DictionaryConverter>
 
 @property NSArray * inventory;
-@property NSInteger score;
-@property NSInteger dimension;
+@property int score;
+@property int dimension;
 @property Vector3f * bedPosition;
 @property Vector3f * spawnPosition;
 @property short sleepTimer;
