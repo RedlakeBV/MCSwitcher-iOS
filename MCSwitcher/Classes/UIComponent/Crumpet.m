@@ -55,7 +55,7 @@
     [UIView animateWithDuration:.5f delay:0.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [self setAlpha: 1.0f];
     } completion:^(BOOL finished) {
-//        [self dismiss];
+        [self dismiss];
     }];
 }
 
