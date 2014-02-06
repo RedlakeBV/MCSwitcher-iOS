@@ -8,7 +8,7 @@
 
 #import "LevelsController.h"
 #import "LevelDataConverter.h"
-#import "Crumpet.h"
+#import "Constants.h"
 
 @implementation LevelsController
 BOOL noMCPE;
@@ -67,11 +67,10 @@ BOOL noMCPE;
 
 
 -(NSArray*)loadLevels:(FailBlock)failBlock {
-//    if([DEFAULTS objectForKey: kMinecraftLoc])
-//    [Crumpet showWithMessage:[NSString stringWithFormat:@"Before loading %@", [[DEFAULTS objectForKey: kMinecraftLoc] substringWithRange:NSMakeRange(22, [[DEFAULTS objectForKey: kMinecraftLoc] length]-23 )]]];
-//    else
-//        [Crumpet showWithMessage:@"No location"];
-    if(![DEFAULTS objectForKey: kMinecraftLoc]) {
+    
+    NSString * path = [DEFAULTS objectForKey: kMinecraftLoc];
+    // Check if there is already a default path from previous time, if so, check if it still exists.
+    if(!path || ![[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:nil]) {
         NSError * err = [NSError errorWithDomain:@"LevelsController" code:-1 userInfo:@{@"error" : @"Minecraft not installed"}];
         if(noMCPE) {
             failBlock(err);
@@ -83,24 +82,19 @@ BOOL noMCPE;
     NSMutableArray * levels = [[NSMutableArray alloc] init];
     
     NSError * error;
-    NSInteger counter = 0;
     NSArray * levelDirNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[DEFAULTS objectForKey:kMinecraftWorldsLoc] error:&error];
 
     for(NSString * levelDirName in levelDirNames) {
         if([levelDirName hasPrefix:@"_"]) continue;
         NSString * levelFileDirPath = [NSString stringWithFormat:@"%@/%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName, @"/level.dat"] ;
         Level * level = [LevelDataConverter readLevelAtPath:levelFileDirPath error:&error];
-        if(level){
+        
+        if(level && [level storageVersion] == LatestStorageVersion){
             [level setRootDirectory: [NSString stringWithFormat:@"%@%@", [DEFAULTS objectForKey:kMinecraftWorldsLoc], levelDirName]];
             [levels addObject: level];
         } else {
-            break;
-
+            continue;
         }
-        
-        if(counter != [levelDirNames count] -1)
-        error = nil; // Only respond to general issues
-        counter++;
         
         if(error)
             failBlock(error);
@@ -117,11 +111,14 @@ BOOL noMCPE;
     [LevelDataConverter writeLevel:level ToPath:levelPath error:error];
 }
 
--(void)toggleModeAtPath:(NSString*) path error:(NSError **)error {
+-(BOOL)toggleModeAtPath:(NSString*) path error:(NSError **)error {
     NSString * levelPath = [NSString stringWithFormat:@"%@/%@", path, @"level.dat"];
+    if(![[NSFileManager defaultManager] fileExistsAtPath:levelPath])return NO;
     Level * level = [LevelDataConverter readLevelAtPath:levelPath error:error];
     [level setRootDirectory: path];
     [self toggleMode:level error:error];
+    
+    return YES;
 }
 
 -(Level*)toggleModeForLevelAtPath:(NSString*) level {
